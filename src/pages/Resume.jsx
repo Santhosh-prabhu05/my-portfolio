@@ -2,7 +2,7 @@ import resume from "../assets/resume.pdf";
 
 const Resume = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center px-4">
       <div className="bg-white p-10 rounded-2xl max-w-lg text-center shadow-2xl">
         
         <h2 className="text-3xl font-bold text-gray-800">
@@ -16,11 +16,11 @@ const Resume = () => {
         </p>
 
         <a
-          href={resume}
+          href="/resume.pdf"
           download
-          className="inline-flex items-center justify-center gap-2 mt-8 px-8 py-3 bg-cyan-600 text-white rounded-full font-semibold hover:bg-cyan-700 transition"
+          className="inline-block mt-6 px-7 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
         >
-          📄 Download Resume
+          Download Resume
         </a>
 
       </div>
@@ -29,3 +29,4 @@ const Resume = () => {
 };
 
 export default Resume;
+

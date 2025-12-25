@@ -1,14 +1,20 @@
+import React from "react";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <>
+    <div className="scroll-smooth">
+      {/* Navbar stays on top */}
       <Navbar />
-      <AppRoutes />
+
+      {/* Main content: all sections in Home.jsx */}
+      <Home />
+
+      {/* Footer at the bottom */}
       <Footer />
-    </>
+    </div>
   );
 }
 

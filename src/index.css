@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Optional: You can also add custom styles here */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+/* Example: custom scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f59e0b; /* Tailwind amber-500 */
+  border-radius: 4px;
+}

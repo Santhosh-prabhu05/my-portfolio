@@ -1,9 +1,22 @@
+import { FaGithub } from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300">
-      <div className="max-w-7xl mx-auto px-6 py-6 text-center">
-        <p className="text-sm">
-          © {new Date().getFullYear()} Santhosh Prabhu. All rights reserved.
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="flex flex-col items-center gap-4">
+
+        {/* GitHub */}
+        <a
+          href="https://github.com/Santhosh-prabhu05"
+          target="_blank"
+          rel="noreferrer"
+          className="text-2xl hover:text-yellow-400 transition"
+        >
+          <FaGithub />
+        </a>
+
+        <p className="text-sm text-gray-400">
+          © {new Date().getFullYear()} Santhosh Prabhu
         </p>
       </div>
     </footer>

@@ -11,55 +11,33 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
-        {/* LOGO / NAME */}
         <h1 className="text-xl font-bold text-indigo-600">
           SP
         </h1>
 
-        {/* LINKS */}
         <div className="flex gap-6">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `${linkClass} ${isActive ? activeClass : ""}`
-            }
-          >
+          <NavLink to="/" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
             Home
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `${linkClass} ${isActive ? activeClass : ""}`
-            }
-          >
+          <NavLink to="/about" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
             About
           </NavLink>
 
-          <NavLink
-            to="/skills"
-            className={({ isActive }) =>
-              `${linkClass} ${isActive ? activeClass : ""}`
-            }
-          >
+          <NavLink to="/skills" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
             Skills
           </NavLink>
 
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `${linkClass} ${isActive ? activeClass : ""}`
-            }
-          >
+          <NavLink to="/projects" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
             Projects
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `${linkClass} ${isActive ? activeClass : ""}`
-            }
-          >
+          {/* ✅ ADD THIS */}
+          <NavLink to="/resume" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
+            Resume
+          </NavLink>
+
+          <NavLink to="/contact" className={({ isActive }) => `${linkClass} ${isActive ? activeClass : ""}`}>
             Contact
           </NavLink>
         </div>

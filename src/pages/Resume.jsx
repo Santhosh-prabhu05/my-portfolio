@@ -1,5 +1,3 @@
-import resume from "../assets/resume.pdf";
-
 const Resume = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center px-4">
@@ -17,7 +15,8 @@ const Resume = () => {
 
         <a
           href="/resume.pdf"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block mt-6 px-7 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
         >
           Download Resume
@@ -29,4 +28,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
